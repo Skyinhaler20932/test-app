@@ -8,9 +8,11 @@ pipeline{
             steps{
                 sh '''
                     echo "Hello from Git!"
-                    
                 '''
-                echo "the ENV is: ${ENV_VAR}"
+                echo "ENV is: ${ENV_VAR}"
+                echo "Job Name is: ${JOB_NAME}"
+                
+
             }
         }
     }
