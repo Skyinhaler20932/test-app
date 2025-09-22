@@ -9,4 +9,9 @@ pipeline{
             }
         }
     }
+    post{
+        always{
+            echo 'WE FINISHED THE PIPELINE!'
+        }
+    }
 }
