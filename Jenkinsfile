@@ -4,7 +4,7 @@ pipeline{
         ENV_VAR = "Hello from env"
     }
     tools{
-        maven 'Maven-3.8.6'
+        maven 'Maven 3.9.9'
         java 'JDK-17'
     }
     stages{
