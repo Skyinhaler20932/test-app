@@ -5,7 +5,7 @@ pipeline{
     }
     tools{
         maven 'Maven 3.9.9'
-        java 'JDK-17'
+        //java 'JDK-17'
     }
     stages{
         stage('First Build'){
