@@ -14,9 +14,15 @@ pipeline{
                     echo "Hello from Git!"
                 '''
                 echo "ENV is: ${ENV_VAR}"
-                echo "Job Name is: ${JOB_NAME}"
-                
-
+                echo "Job Name is: ${JOB_NAME}"    
+            }
+        }
+        stage('Deploy'){
+            steps{
+                when{
+                    branch 'master'
+                    echo "can't deploy due to racism"
+                }
             }
         }
     }
