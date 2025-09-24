@@ -3,6 +3,10 @@ pipeline{
     environment{
         ENV_VAR = "Hello from env"
     }
+    tools{
+        maven 'Maven-3.8.6'
+        java 'JDK-17'
+    }
     stages{
         stage('First Build'){
             steps{
